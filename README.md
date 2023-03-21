@@ -24,13 +24,6 @@ dependencies {
 
  -  In Java
 ```java
-ArrayList<String> data = new ArrayList<>();
-
-data.add("Delete it");
-data.add("Copy");
-data.add("Move");
-data.add("Duplicate");
-
 new DatePicker(MyQRCodeActivity.this)
      .setTitle("Select date")
      .setConfirm("Confirm")
