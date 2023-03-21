@@ -47,7 +47,10 @@ afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                from components.release
+                groupId = 'com.iamauttamai.datepicker'
+                artifactId = 'DatePicker'
+                version = '1.0.8'
+                artifact(bundleReleaseAar)
             }
         }
     }
