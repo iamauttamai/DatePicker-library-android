@@ -21,13 +21,11 @@ class MainActivity : AppCompatActivity() {
         binding.btnDate.setOnClickListener {
             DatePicker(this)
                 .setTitle("เลือกวันที่")
+                .setConfirm("ตกลง")
                 .setTitleColor(Color.parseColor("#005DA8"))
                 .setTitleSize(10f)
                 .setStartYear(1998)
                 .setEndYear(2050)
-                .setDay(1)
-                .setMonth(3)
-                .setYear(2020)
                 .create(object : PickerCallBack {
                     override fun data(data: Date) {
                         // Format the date EN

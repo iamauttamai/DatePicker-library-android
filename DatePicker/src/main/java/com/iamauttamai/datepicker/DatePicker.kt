@@ -41,6 +41,11 @@ class DatePicker {
         return datePicker
     }
 
+    fun setConfirm(textConfirm: String): DatePicker {
+        ThaiDatePickerData.textConfirm = textConfirm
+        return datePicker
+    }
+
     fun setTitleColor(colorTitle: Int): DatePicker {
         ThaiDatePickerData.colorTitle = colorTitle
         return datePicker
@@ -112,6 +117,7 @@ class DatePicker {
 
     private fun setData() {
         txtTitle.text = ThaiDatePickerData.textTitle
+        txtConfirm.text = ThaiDatePickerData.textConfirm
         txtTitle.setTextColor(ThaiDatePickerData.colorTitle)
         picker.yearStart = ThaiDatePickerData.startYear
         picker.yearEnd = ThaiDatePickerData.endYear
@@ -121,7 +127,7 @@ class DatePicker {
     }
 
     object ThaiDatePickerData {
-        var textTitle = ""
+        var textTitle = "Select date"
         var colorTitle = Color.parseColor("#000000")
         var sizeTitle = 0f
         var startYear = 1998
@@ -129,6 +135,7 @@ class DatePicker {
         var day = 1
         var month = 1
         var year = 1998
+        var textConfirm = "Confirm"
     }
 
 }
