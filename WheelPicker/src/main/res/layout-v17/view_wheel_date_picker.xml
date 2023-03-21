@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.aigestudio.wheelpicker.widgets.WheelDayPicker
+        android:id="@+id/wheel_date_picker_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:wheel_atmospheric="true"
+        app:wheel_selected_item_text_color="#005DA8"
+        app:wheel_visible_item_count="5" />
+
+    <TextView
+        android:id="@+id/wheel_date_picker_day_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/WheelMargins"
+        android:layout_marginEnd="@dimen/WheelMargins"
+        android:layout_weight="1"
+        android:fontFamily="@font/font_app"
+        android:text=" "
+        android:textColor="#536D8A"
+        android:visibility="gone" />
+
+    <com.aigestudio.wheelpicker.widgets.WheelMonthPicker
+        android:id="@+id/wheel_date_picker_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:wheel_atmospheric="true"
+        app:wheel_selected_item_text_color="#005DA8"
+        app:wheel_visible_item_count="5" />
+
+    <TextView
+        android:id="@+id/wheel_date_picker_month_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/WheelMargins"
+        android:layout_marginEnd="@dimen/WheelMargins"
+        android:layout_weight="1"
+        android:fontFamily="@font/font_app"
+        android:text=" "
+        android:textColor="#536D8A"
+        android:visibility="gone" />
+
+    <com.aigestudio.wheelpicker.widgets.WheelYearPicker
+        android:id="@+id/wheel_date_picker_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:wheel_atmospheric="true"
+        app:wheel_selected_item_text_color="#005DA8"
+        app:wheel_visible_item_count="5" />
+
+    <TextView
+        android:id="@+id/wheel_date_picker_year_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/WheelMargins"
+        android:layout_marginEnd="@dimen/WheelMargins"
+        android:layout_weight="1"
+        android:fontFamily="@font/font_app"
+        android:text=" "
+        android:textColor="#536D8A"
+        android:visibility="gone" />
+
+</LinearLayout>
