@@ -49,7 +49,7 @@ afterEvaluate {
             release(MavenPublication) {
                 groupId = 'com.iamauttamai.datepicker'
                 artifactId = 'DatePicker'
-                version = '1.0.8'
+                version = '1.0.9'
                 artifact(bundleReleaseAar)
             }
         }

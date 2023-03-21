@@ -47,5 +47,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     //WheelPicker Library
-    implementation project(path: ':WheelPicker')
+//    implementation project(path: ':WheelPicker')
 }
