@@ -24,7 +24,7 @@ dependencies {
 
  -  In Java
 ```java
-new DatePicker(MyQRCodeActivity.this)
+new DatePicker(this)
      .setTitle("Select date")
      .setConfirm("Confirm")
      .setTitleColor(Color.parseColor("#005DA8"))
