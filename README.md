@@ -16,7 +16,7 @@
 
 ```java
 dependencies {
-    implementation 'com.github.iamauttamai:DatePicker-library-android:1.0.4'
+    implementation 'com.github.iamauttamai:DatePicker-library-android:1.0.9'
 }
 ```
 
